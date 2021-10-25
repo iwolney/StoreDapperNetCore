@@ -17,17 +17,15 @@ namespace WolneyStore.Tests.Entities
 
         public OrderTests()
         {
-            // Recupera os produtos do banco
             var name = new Name("Wolney", "Rodrigues");
-            var document = new Document("1198845120");
+            var document = new Document("132165465987");
             var email = new Email("wolney@msn.com");
-            _customer = new Customer(name, document, email, "29500215412");
-            _order = new Order(_customer);
+            var customer = new Customer(name, document, email, "1199989844");
 
-            _mouse = new Product("Mouse Gamer", "Mouse Gamer", "mouse.jpg", 100M, 10);
-            _keyboard = new Product("Teclado Gamer", "Teclado Gamer", "Teclado.jpg", 100M, 10);
-            _chair = new Product("Cadeira Gamer", "Cadeira Gamer", "Cadeira.jpg", 100M, 10);
-            _monitor = new Product("Monitor Gamer", "Monitor Gamer", "Monitor.jpg", 100M, 10);
+            var mouse = new Product("Mouse", "Rato", "image.png", 59.90M, 10);
+            var teclado = new Product("Teclado", "Teclado", "image.png", 159.90M, 10);
+            var impressora = new Product("Impressora", "Impressora", "image.png", 359.90M, 10);
+            var cadeira = new Product("Cadeira", "Cadeira", "image.png", 659.90M, 10);
         }
 
         // Consigo criar um novo pedido
