@@ -1,6 +1,6 @@
 ﻿namespace WolneyStore.Domain.StoreContext.Enums
 {
-    public enum EDeliveyStatus
+    public enum EDeliveryStatus
     {
         Waiting = 1,
         Shipped = 2,
